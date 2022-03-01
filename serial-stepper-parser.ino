@@ -4,7 +4,6 @@ uStepperS stepper;
 int vel = 0;
 int current = 60;
 String inputString;
-boolean capturing = false;
 
 void setup() {
   stepper.setup();
