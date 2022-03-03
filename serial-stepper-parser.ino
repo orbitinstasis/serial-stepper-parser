@@ -10,9 +10,10 @@ void setup() {
   Serial.begin(2000000);
   stepper.disablePid();
   stepper.disableClosedLoop();
-  stepper.setCurrent(current);
-  stepper.setHoldCurrent(current);
-  stepper.setMaxVelocity(vel);
+  stepper.setCurrent(80);
+  stepper.setHoldCurrent(50);
+  stepper.setMaxVelocity(0);
+  stepper.setMaxAcceleration(40);
   stepper.runContinous(true);
 }
 
